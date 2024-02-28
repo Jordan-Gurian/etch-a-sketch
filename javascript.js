@@ -21,6 +21,9 @@ function setGrid(gridHeight, gridWidth, borderWidth, bodyMargin) {
             let newDiv = document.createElement('div');
             newDiv.classList.add('pixels');
             newDiv.style.padding = (divWidth - ( 2 * borderWidth ) ) / 2 + "px";
+            newDiv.addEventListener('mouseenter', () => {
+                newDiv.style.backgroundColor = 'green';
+            })
             container.appendChild(newDiv);
         }
     }
